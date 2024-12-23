@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>To Do App</title>
+  </head>
+  <body>
+    <h2 class="title">TO DO LIST</h2>
+    <div class="container">
+      <form id="toDoForm">
+        <input type="text" placeholder="Enter your task" name="task" required />
+        <button type="submit" class="btn btn-add">Add</button>
+      </form>
+      <div class="list-container">
+        <ul class="tasks-ul">
+          <template id="li-task">
+            <li class="task">
+              <p class="li-text">This is a task</p>
+              <button class="li-btn btn btn-remove">Remove</button>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
